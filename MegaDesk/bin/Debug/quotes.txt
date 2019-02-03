@@ -1,0 +1,9 @@
+CustomerName,Price,DateOrdered,DaysOrdered,Width,Depth,NrDrawers,Material
+dg,1355,1/31/2019 9:58:43 PM,5,35,53,3,Laminate
+
+dg,1355,1/31/2019 9:58:43 PM,5,35,53,3,Laminate
+
+Klevin,2490,1/31/2019 10:12:40 PM,5,32,45,34,Laminate
+
+Klevin,1825,2/2/2019 9:47:25 PM,3,43,35,20,Pine
+
