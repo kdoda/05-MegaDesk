@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MegaDesk
 {
-    public class Desk
+    public struct Desk
     {
         /// <summary>
         /// An enumm that holds the surface material and the price

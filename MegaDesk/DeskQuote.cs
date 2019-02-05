@@ -4,12 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Diagnostics; //for asserts since I am paranoid
+using System.IO;
 
 //TODO maybe prevent orders not in the right date
 namespace MegaDesk
 {
     public class DeskQuote
     {
+        private const int SIZE = 3;
         private const int Rush_3 = 3;
         private const int Rush_5 = 5;
         private const int Rush_7 = 7;
@@ -25,20 +27,20 @@ namespace MegaDesk
         /// Second: 1000 to 2000 size of desk in^2
         /// Third:  greater than 2000 size of desk in^2
         /// </summary>
-        private static Dictionary<int, List<int>> prices = new Dictionary<int, List<int>>{
-            { Rush_3, new List<int> { 60, 70, 80} },
-            { Rush_5, new List<int> { 40, 50, 60} },
-            { Rush_7, new List<int> { 30, 35, 40} },
-        };
+        private static Dictionary<int, List<int>> prices;
         private int _DaysOrdered;
 
         public string CustomerName { get; set; }
         public DateTime DateOrdered { get; set; }
         public Desk Desk { get; set; }
        
+        public DeskQuote()
+        {
+            loadPrices();
+        }
+
         public int DaysOrdered
         {
-            //TODO maybe put the exception here 
             get
             {
                 return _DaysOrdered;
@@ -124,6 +126,7 @@ namespace MegaDesk
 
         private static KeyValuePair<string, int> ToFriendlyString(int orderDays)
         {
+            loadPrices();
             switch (orderDays)
             {
                 case Rush_3:
@@ -137,6 +140,55 @@ namespace MegaDesk
                 default:
                     Debug.Assert(false);
                     return new KeyValuePair<string, int>("Shouldn't hit this",0);
+            }
+        }
+
+        private static void loadPrices()
+        {
+            try
+            {
+                if (prices == null)
+                {
+                    prices = new Dictionary<int, List<int>>();
+                    string[] rawPrices = File.ReadAllLines("rushOrderPrices.txt");
+                    int index = 0;
+                    for (int i = 0; i < SIZE; ++i)
+                    {
+                        List<int> rowPrices = new List<int>();
+                        for (int j = 0; j < SIZE; ++j)
+                        {
+                            int price = int.Parse(rawPrices[index++]);
+                            rowPrices.Add(price);
+                        }
+                        prices.Add(translateIndexToKey(i), rowPrices);
+                    }
+
+                }
+            }
+            catch(Exception ex) //in case it fails for some reason use the default values
+            {
+                prices =  new Dictionary<int, List<int>>{
+                                { Rush_3, new List<int> { 60, 70, 80 } },
+                                { Rush_5, new List<int> { 40, 50, 60 } },
+                                { Rush_7, new List<int> { 30, 35, 40 } },
+                            };
+            }
+
+        }
+
+        private static int translateIndexToKey(int index)
+        {
+            switch(index)
+            {
+                case 0:
+                    return Rush_3;
+                case 1:
+                    return Rush_5;
+                case 2:
+                    return Rush_7;
+                default:
+                    Debug.Assert(false);
+                    return -1;
             }
         }
 

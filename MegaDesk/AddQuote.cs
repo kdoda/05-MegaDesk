@@ -15,6 +15,7 @@ namespace MegaDesk
     public partial class AddQuote : Form
     {
 
+
         public AddQuote()
         {
             InitializeComponent();
