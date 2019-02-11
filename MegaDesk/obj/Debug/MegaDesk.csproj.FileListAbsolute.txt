@@ -61,3 +61,6 @@ C:\Users\kdoda\Source\Repos\05-MegaDesk\MegaDesk\obj\Debug\MegaDesk.csproj.CoreC
 C:\Users\kdoda\Source\Repos\05-MegaDesk\MegaDesk\obj\Debug\MegaDesk.csproj.CopyComplete
 C:\Users\kdoda\Source\Repos\05-MegaDesk\MegaDesk\obj\Debug\MegaDesk.exe
 C:\Users\kdoda\Source\Repos\05-MegaDesk\MegaDesk\obj\Debug\MegaDesk.pdb
+C:\Users\kdoda\Source\Repos\05-MegaDesk\MegaDesk\bin\Debug\Newtonsoft.Json.dll
+C:\Users\kdoda\Source\Repos\05-MegaDesk\MegaDesk\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\kdoda\Source\Repos\05-MegaDesk\MegaDesk\bin\Debug\Newtonsoft.Json.xml

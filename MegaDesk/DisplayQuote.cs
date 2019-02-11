@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using Newtonsoft.Json;
 
 namespace MegaDesk
 {
@@ -46,14 +47,17 @@ namespace MegaDesk
             // First time adding text to the file 
             if (!File.Exists(FILE_PATH))
             {
-                string header = DeskQuote.CSVHeader();
-                File.WriteAllText(FILE_PATH, header + Environment.NewLine + deskQuote.ToString() + Environment.NewLine);
+                List<DeskQuote> deskQuotes = new List<DeskQuote>();
+                deskQuotes.Add(deskQuote);
+                File.WriteAllText(FILE_PATH, JsonConvert.SerializeObject(deskQuotes));
             }
-
-
-            // This text is always added, making the file longer over time
-            // if it is not deleted.
-            File.AppendAllText(FILE_PATH, deskQuote.ToString() + Environment.NewLine);
+            else
+            {
+                string jsonQuotes = File.ReadAllText(FILE_PATH);
+                List<DeskQuote> deskQuotes = JsonConvert.DeserializeObject<List<DeskQuote>>(jsonQuotes);
+                deskQuotes.Add(deskQuote);
+                File.WriteAllText(FILE_PATH, JsonConvert.SerializeObject(deskQuotes));
+            }
 
         }
 

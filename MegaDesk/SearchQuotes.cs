@@ -1,5 +1,6 @@
 ﻿using CsvHelper;
 using CsvHelper.Configuration;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -83,12 +84,9 @@ namespace MegaDesk
         {
             try
             {
-                using (var reader = new StreamReader(FILE_PATH))
-                using (var csv = new CsvReader(reader))
-                {
-                    csv.Configuration.RegisterClassMap<DeskQuoteMap>();
-                    deskQuotes = csv.GetRecords<DeskQuote>().ToList();
-                }
+                //TODO move to a Util class, since it's being dublicated
+                string jsonQuotes = File.ReadAllText(FILE_PATH);
+                deskQuotes = JsonConvert.DeserializeObject<List<DeskQuote>>(jsonQuotes);
             }
             catch(FileNotFoundException ex)
             {

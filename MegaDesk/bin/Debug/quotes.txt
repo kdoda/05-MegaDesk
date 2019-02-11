@@ -1,9 +1,1 @@
-CustomerName,Price,DateOrdered,DaysOrdered,Width,Depth,NrDrawers,Material
-dg,1355,1/31/2019 9:58:43 PM,5,35,53,3,Laminate
-
-dg,1355,1/31/2019 9:58:43 PM,5,35,53,3,Laminate
-
-Klevin,2490,1/31/2019 10:12:40 PM,5,32,45,34,Laminate
-
-Klevin,1825,2/2/2019 9:47:25 PM,3,43,35,20,Pine
-
+[{"CustomerName":"dgf","DateOrdered":"2019-02-05T15:26:12.980108-07:00","Desk":{"Width":35,"Depth":53,"NrDrawers":30,"Material":100,"SurfaceMaterialPrice":100,"SurfaceArea":1855},"DaysOrdered":5,"Price":2705}]
