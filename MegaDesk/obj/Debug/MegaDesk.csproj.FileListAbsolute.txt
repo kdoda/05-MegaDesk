@@ -64,3 +64,24 @@ C:\Users\kdoda\Source\Repos\05-MegaDesk\MegaDesk\obj\Debug\MegaDesk.pdb
 C:\Users\kdoda\Source\Repos\05-MegaDesk\MegaDesk\bin\Debug\Newtonsoft.Json.dll
 C:\Users\kdoda\Source\Repos\05-MegaDesk\MegaDesk\bin\Debug\Newtonsoft.Json.pdb
 C:\Users\kdoda\Source\Repos\05-MegaDesk\MegaDesk\bin\Debug\Newtonsoft.Json.xml
+C:\Users\dodak\Desktop\New folder\05-MegaDesk\MegaDesk\bin\Debug\MegaDesk.exe.config
+C:\Users\dodak\Desktop\New folder\05-MegaDesk\MegaDesk\bin\Debug\MegaDesk.exe
+C:\Users\dodak\Desktop\New folder\05-MegaDesk\MegaDesk\bin\Debug\MegaDesk.pdb
+C:\Users\dodak\Desktop\New folder\05-MegaDesk\MegaDesk\bin\Debug\CsvHelper.dll
+C:\Users\dodak\Desktop\New folder\05-MegaDesk\MegaDesk\bin\Debug\Newtonsoft.Json.dll
+C:\Users\dodak\Desktop\New folder\05-MegaDesk\MegaDesk\bin\Debug\System.ValueTuple.dll
+C:\Users\dodak\Desktop\New folder\05-MegaDesk\MegaDesk\bin\Debug\CsvHelper.xml
+C:\Users\dodak\Desktop\New folder\05-MegaDesk\MegaDesk\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\dodak\Desktop\New folder\05-MegaDesk\MegaDesk\bin\Debug\Newtonsoft.Json.xml
+C:\Users\dodak\Desktop\New folder\05-MegaDesk\MegaDesk\bin\Debug\System.ValueTuple.xml
+C:\Users\dodak\Desktop\New folder\05-MegaDesk\MegaDesk\obj\Debug\MegaDesk.csprojResolveAssemblyReference.cache
+C:\Users\dodak\Desktop\New folder\05-MegaDesk\MegaDesk\obj\Debug\MegaDesk.AddQuote.resources
+C:\Users\dodak\Desktop\New folder\05-MegaDesk\MegaDesk\obj\Debug\MegaDesk.DisplayQuote.resources
+C:\Users\dodak\Desktop\New folder\05-MegaDesk\MegaDesk\obj\Debug\MegaDesk.MainMenu.resources
+C:\Users\dodak\Desktop\New folder\05-MegaDesk\MegaDesk\obj\Debug\MegaDesk.Properties.Resources.resources
+C:\Users\dodak\Desktop\New folder\05-MegaDesk\MegaDesk\obj\Debug\MegaDesk.SearchQuotes.resources
+C:\Users\dodak\Desktop\New folder\05-MegaDesk\MegaDesk\obj\Debug\MegaDesk.ViewAllQuotes.resources
+C:\Users\dodak\Desktop\New folder\05-MegaDesk\MegaDesk\obj\Debug\MegaDesk.csproj.GenerateResource.Cache
+C:\Users\dodak\Desktop\New folder\05-MegaDesk\MegaDesk\obj\Debug\MegaDesk.csproj.CoreCompileInputs.cache
+C:\Users\dodak\Desktop\New folder\05-MegaDesk\MegaDesk\obj\Debug\MegaDesk.exe
+C:\Users\dodak\Desktop\New folder\05-MegaDesk\MegaDesk\obj\Debug\MegaDesk.pdb
