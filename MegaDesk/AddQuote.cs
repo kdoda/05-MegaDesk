@@ -103,9 +103,9 @@ namespace MegaDesk
                 return false;
             }
 
-            if (parsedDepth < 24 || parsedDepth > 96)
+            if (parsedDepth < 12 || parsedDepth > 48)
             {
-                errorMessage = "The depth should be from 24 to 96.";
+                errorMessage = "The depth should be from 12 to 48.";
                 return false;
             }
 
